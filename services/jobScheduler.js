@@ -7,7 +7,8 @@ import Crypto from '../models/Crypto.js';
 // Schedule the job to run every 30 seconds for testing
 
 
-cron.schedule('*/30 * * * * *', async () => {
+// cron.schedule('*/30 * * * * *', async () => {
+  cron.schedule('0 */2 * * *', async () => {
   console.log('Cron job triggered at', new Date().toLocaleString());
 
   try {
